@@ -1,5 +1,7 @@
 # Springboot Liquibase example
 
+(Text on this project is mostly in spanish)
+
 Ejemplo basado en la documentacion de [esta pagina](https://www.baeldung.com/liquibase-refactor-schema-of-java-app)
 con un setup inicial a mano (no incluido en la pagina).
 
