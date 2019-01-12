@@ -1,7 +1,7 @@
 databaseChangeLog:
   - changeSet:
       id: 1
-      author: nvoxland
+      author: pepe
       changes:
         - createTable:
             tableName: person
@@ -25,24 +25,44 @@ databaseChangeLog:
                   name: state
                   type: char(2)
 
-#  - changeSet:
-#      id: 2
-#      author: nvoxland
-#      changes:
-#        - addColumn:
-#            tableName: person
-#            columns:
-#              - column:
-#                  name: username
-#                  type: varchar(8)
-#
-#  - changeSet:
-#      id: 3
-#      author: nvoxland
-#      changes:
-#        - addLookupTable:
-#            existingTableName: person
-#            existingColumnName: state
-#            newTableName: state
-#            newColumnName: id
-#            newColumnDataType: char(2)
+  - changeSet:
+      id: 2
+      author: pepe
+      changes:
+        - addColumn:
+            tableName: person
+            columns:
+              - column:
+                  name: username
+                  type: varchar(8)
+
+  - changeSet:
+      id: 3
+      author: pepe
+      changes:
+        - addLookupTable:
+            existingTableName: person
+            existingColumnName: state
+            newTableName: state
+            newColumnName: id
+            newColumnDataType: char(2)
+
+  - changeSet:
+      id: 3.5
+      author: pepe
+      changes:
+        - renameColumn:
+            tableName: person
+            oldColumnName: username
+            newColumnName: login
+            columnDataType: varchar(8)
+
+  - changeSet:
+      id: 4
+      author: pepe
+      changes:
+        - renameColumn:
+            tableName: person
+            oldColumnName: state
+            newColumnName: status
+            columnDataType: char(2)

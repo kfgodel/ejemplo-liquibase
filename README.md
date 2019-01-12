@@ -10,4 +10,5 @@ con un setup inicial a mano (no incluido en la pagina).
 3. Modificar el [application.properties](src/main/resources/application.properties) para apuntar a la base
 4. Agregar [el changelog](src/main/resources/db/changelog/db.changelog-master.yaml) para liquibase (basado [en esto](http://www.liquibase.org/documentation/yaml_format.html) para el formato yaml)
 5. Agregar [config de logback](src/main/resources/logback.xml) para mejorar el output
+6. Agregar cambios al [el changelog](src/main/resources/db/changelog/db.changelog-master.yaml) para probar cambios en la base
    
