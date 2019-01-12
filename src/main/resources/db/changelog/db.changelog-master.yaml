@@ -1,3 +1,4 @@
+# Referencia en http://www.liquibase.org/documentation/changes/index.html
 databaseChangeLog:
   - changeSet:
       id: 1
